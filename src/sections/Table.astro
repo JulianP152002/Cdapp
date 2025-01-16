@@ -1,6 +1,6 @@
 ---
-import Grafica from '../sections/Grafica.astro';
-
+import Grafica1 from "../components/Grafica1.astro";
+import Grafica2 from "../components/Grafica2.astro";
 const NUMBERS = [1, 2, 3, 4, ];
 const num1 = 1;
 const DATOS = ['2,0', '2,0',' 2,0', '2,0'];
@@ -235,21 +235,28 @@ const DATOS = ['2,0', '2,0',' 2,0', '2,0'];
 
         </div>
 
-        <button data-button class="bg-red-500 px-2 py-3 rounded-2xl">
-            click me!
-        </button>
+
         
     </div>
-    <div class="w-3/4 my-10 h-[500px]" id="chart1" >
-        <div class="w-full h-[400px]" >
-            <Grafica></Grafica>
+    <button data-button class="bg-red-500 px-2 py-3 rounded-2xl">
+        click me!
+    </button>
+    <div class="w-full flex justify-around my-10 h-[500px]" id="chart1" >
+        <div class="" >
+            <Grafica1></Grafica1>
+            
         </div>
+        <div class="" >
+
+            <Grafica2></Grafica2>
+        </div>
+
     </div>
     
     
 
     <script src="../scripts/scritp.js"></script>
-    <script src="../scripts/main.js" ></script>
+
 </section>
 
 <style>
